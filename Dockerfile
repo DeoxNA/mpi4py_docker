@@ -15,7 +15,7 @@ RUN ln -s /usr/bin/python3 /usr/bin/python && \
     ln -s /usr/bin/pip3 /usr/bin/pip
 
 # Install python packages
-RUN pip --no-cache-dir install pandas scipy
+RUN pip --no-cache-dir install pandas scipy psutil
 
 # Build MPICH
 RUN mkdir /build/
